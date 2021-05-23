@@ -1,0 +1,115 @@
+USER SYMBOL by DSCH3
+DATE 12/11/2020 06:52:19 PM
+SYM  #173120001_8:1_MUX
+BB(0,0,60,100)
+TITLE 10 -7  #173120001_8:1_MUX
+MODEL 6000
+REC(5,5,50,90)
+PIN(0,80,0.00,0.00)in7
+PIN(0,70,0.00,0.00)in6
+PIN(35,100,0.00,0.00)S0
+PIN(25,100,0.00,0.00)S1
+PIN(0,60,0.00,0.00)in5
+PIN(0,50,0.00,0.00)in4
+PIN(0,30,0.00,0.00)in2
+PIN(0,40,0.00,0.00)in3
+PIN(0,10,0.00,0.00)in0
+PIN(0,20,0.00,0.00)in1
+PIN(15,100,0.00,0.00)S2
+PIN(60,10,2.00,1.00)out3
+LIG(0,80,5,80)
+LIG(0,70,5,70)
+LIG(35,95,35,100)
+LIG(25,95,25,100)
+LIG(0,60,5,60)
+LIG(0,50,5,50)
+LIG(0,30,5,30)
+LIG(0,40,5,40)
+LIG(0,10,5,10)
+LIG(0,20,5,20)
+LIG(15,95,15,100)
+LIG(55,10,60,10)
+LIG(5,5,5,95)
+LIG(5,5,55,5)
+LIG(55,5,55,95)
+LIG(55,95,5,95)
+VLG module 173120001_81_MUX( in7,in6,S0,S1,in5,in4,in2,in3,
+VLG  in0,in1,S2,out3);
+VLG  input in7,in6,S0,S1,in5,in4,in2,in3;
+VLG  input in0,in1,S2;
+VLG  output out3;
+VLG  wire w5,w7,w11,w12,w13,w14,w15,w16;
+VLG  wire w17,w18,w19,w20,w21,w22,w23,w24;
+VLG  wire w25,w27,w28,w29,w31,w33,w34,w36;
+VLG  wire w37,w38,w39,w40,w41,w42,w43,w44;
+VLG  wire w45,;
+VLG  nmos #(24) nmos_1(w5,vss,S2); // 1.0u 0.12u
+VLG  pmos #(66) pmos_2(w7,vdd,S0); // 2.0u 0.12u
+VLG  nmos #(66) nmos_3(w7,vss,S0); // 1.0u 0.12u
+VLG  pmos #(24) pmos_4(w5,vdd,S2); // 2.0u 0.12u
+VLG  nmos #(10) nmos_5(w11,vss,w7); // 1.0u 0.12u
+VLG  nmos #(10) nmos_6(w12,vss,in6); // 1.0u 0.12u
+VLG  nmos #(10) nmos_7(w13,w12,S1); // 1.0u 0.12u
+VLG  nmos #(59) nmos_8(w14,w13,w7); // 1.0u 0.12u
+VLG  nmos #(10) nmos_9(w15,w11,in4); // 1.0u 0.12u
+VLG  nmos #(10) nmos_10(w16,vss,S0); // 1.0u 0.12u
+VLG  nmos #(10) nmos_11(w17,w16,in5); // 1.0u 0.12u
+VLG  nmos #(59) nmos_12(w14,w17,w18); // 1.0u 0.12u
+VLG  nmos #(59) nmos_13(w14,w15,w18); // 1.0u 0.12u
+VLG  nmos #(10) nmos_14(w19,vss,S0); // 1.0u 0.12u
+VLG  nmos #(10) nmos_15(w20,w19,S1); // 1.0u 0.12u
+VLG  nmos #(59) nmos_16(w14,w20,in7); // 1.0u 0.12u
+VLG  pmos #(38) pmos_17(w22,w21,w7); // 2.0u 0.12u
+VLG  pmos #(38) pmos_18(w21,w23,S0); // 2.0u 0.12u
+VLG  pmos #(38) pmos_19(w23,vdd,w7); // 2.0u 0.12u
+VLG  pmos #(38) pmos_20(w22,w21,S1); // 2.0u 0.12u
+VLG  pmos #(38) pmos_21(w22,w21,in6); // 2.0u 0.12u
+VLG  pmos #(59) pmos_22(w14,w22,S0); // 2.0u 0.12u
+VLG  pmos #(38) pmos_23(w21,w23,w18); // 2.0u 0.12u
+VLG  pmos #(38) pmos_24(w21,w23,in5); // 2.0u 0.12u
+VLG  pmos #(59) pmos_25(w14,w22,S1); // 2.0u 0.12u
+VLG  pmos #(59) pmos_26(w14,w22,in7); // 2.0u 0.12u
+VLG  pmos #(38) pmos_27(w23,vdd,in4); // 2.0u 0.12u
+VLG  pmos #(38) pmos_28(w23,vdd,w18); // 2.0u 0.12u
+VLG  nmos #(66) nmos_29(w18,vss,S1); // 1.0u 0.12u
+VLG  pmos #(66) pmos_30(w18,vdd,S1); // 2.0u 0.12u
+VLG  nmos #(10) nmos_31(w25,vss,w24); // 1.0u 0.12u
+VLG  pmos #(38) pmos_32(w29,w27,w28); // 2.0u 0.12u
+VLG  pmos #(38) pmos_33(w31,vdd,w18); // 2.0u 0.12u
+VLG  pmos #(38) pmos_34(w31,vdd,in0); // 2.0u 0.12u
+VLG  pmos #(59) pmos_35(w34,w33,in3); // 2.0u 0.12u
+VLG  pmos #(59) pmos_36(w34,w33,S1); // 2.0u 0.12u
+VLG  pmos #(38) pmos_37(w36,w31,in1); // 2.0u 0.12u
+VLG  pmos #(38) pmos_38(w36,w31,w18); // 2.0u 0.12u
+VLG  pmos #(59) pmos_39(w34,w33,S0); // 2.0u 0.12u
+VLG  pmos #(38) pmos_40(w33,w36,in2); // 2.0u 0.12u
+VLG  pmos #(38) pmos_41(w33,w36,S1); // 2.0u 0.12u
+VLG  pmos #(38) pmos_42(w31,vdd,w7); // 2.0u 0.12u
+VLG  pmos #(38) pmos_43(w36,w31,S0); // 2.0u 0.12u
+VLG  pmos #(38) pmos_44(w33,w36,w7); // 2.0u 0.12u
+VLG  nmos #(59) nmos_45(w34,w37,in3); // 1.0u 0.12u
+VLG  nmos #(10) nmos_46(w37,w38,S1); // 1.0u 0.12u
+VLG  nmos #(10) nmos_47(w38,vss,S0); // 1.0u 0.12u
+VLG  nmos #(59) nmos_48(w34,w39,w18); // 1.0u 0.12u
+VLG  nmos #(59) nmos_49(w34,w40,w18); // 1.0u 0.12u
+VLG  nmos #(10) nmos_50(w40,w41,in1); // 1.0u 0.12u
+VLG  nmos #(10) nmos_51(w41,vss,S0); // 1.0u 0.12u
+VLG  nmos #(10) nmos_52(w39,w42,in0); // 1.0u 0.12u
+VLG  nmos #(59) nmos_53(w34,w43,w7); // 1.0u 0.12u
+VLG  nmos #(10) nmos_54(w43,w44,S1); // 1.0u 0.12u
+VLG  nmos #(10) nmos_55(w44,vss,in2); // 1.0u 0.12u
+VLG  nmos #(10) nmos_56(w42,vss,w7); // 1.0u 0.12u
+VLG  nmos #(38) nmos_57(w29,w25,S2); // 1.0u 0.12u
+VLG  nmos #(10) nmos_58(w45,vss,w28); // 1.0u 0.12u
+VLG  pmos #(24) pmos_59(w27,vdd,S2); // 2.0u 0.12u
+VLG  pmos #(38) pmos_60(w29,w27,w5); // 2.0u 0.12u
+VLG  pmos #(17) pmos_61(out3,vdd,w29); // 2.0u 0.12u
+VLG  nmos #(17) nmos_62(out3,vss,w29); // 1.0u 0.12u
+VLG  nmos #(38) nmos_63(w29,w45,w5); // 1.0u 0.12u
+VLG  pmos #(24) pmos_64(w27,vdd,w24); // 2.0u 0.12u
+VLG  nmos #(24) nmos_65(w24,vss,w14); // 1.0u 0.12u
+VLG  pmos #(24) pmos_66(w24,vdd,w14); // 2.0u 0.12u
+VLG  nmos #(24) nmos_67(w28,vss,w34); // 1.0u 0.12u
+VLG  pmos #(24) pmos_68(w28,vdd,w34); // 2.0u 0.12u
+VLG endmodule
+FSYM
