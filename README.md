@@ -44,6 +44,3 @@ Version DSCH2.7:
 - Lab_7 [Go to ReadMe](Lab_7_Mid_Final/README.md)
     - 4 X 2 Encoder
     - Lab Final (4:1 MUX using Tri-state Inverter)
-
-Okay.
-
